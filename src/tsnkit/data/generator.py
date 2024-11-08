@@ -34,7 +34,6 @@ class DatasetGenerator:
                                 self.deadline,
                                 self.topo))
         param_combination_size = len(param_combinations)
-        total_combinations_size = len(param_combinations) * self.num_ins
         dataset_logs = []
         for i in range(self.num_ins):
             with tqdm(total=param_combination_size,
